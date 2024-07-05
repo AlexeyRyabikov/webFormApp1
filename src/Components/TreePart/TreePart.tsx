@@ -14,14 +14,12 @@ export default function TreePart() {
   const dispatch = useDispatch();
   const currentJSONInfo = useSelector((state: StateType) => state.currentInfo);
   const currentParsedInfo: BranchItemsType[] = JSON.parse(currentJSONInfo);
-  console.log(currentParsedInfo);
   const onSelect: selectFuncType = (
     selectedKeys,
     // info,
     info: SecondModifiedParam,
   ) => {
     dispatch(changeTab(info.node));
-    console.log("selected", info.node);
   };
   return (
     <div className={styles.Outer}>

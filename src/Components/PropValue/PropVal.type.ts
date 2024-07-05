@@ -1,4 +1,4 @@
-import { propsInfo } from "../../Types/ItemProps.type.";
+import { propsInfo } from "../../Types/ItemProps.type";
 
 export type PropValType = {
   value: propsInfo;

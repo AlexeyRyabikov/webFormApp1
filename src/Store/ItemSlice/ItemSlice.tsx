@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import jSONTreeData from "./Example";
 import { StateType } from "./state.type";
-import { ItemPropsType } from "../../Types/ItemProps.type.";
+import { ItemPropsType } from "../../Types/ItemProps.type";
 import { BranchItemsType } from "../../Types/branchItems.type";
 import { findELByID } from "../../Helpers/StraitenInfo";
 const initialState: StateType = {
@@ -15,7 +15,6 @@ const itemSlice = createSlice({
   initialState,
   reducers: {
     changeTab: (state, action: { payload: BranchItemsType }) => {
-      console.log("work!");
       state.currentObj = action.payload;
     },
     setInitialState: (state) => {
