@@ -122,9 +122,12 @@ const treeData: BranchItemsType[] = [
         title: "ford",
         key: "0-0-2",
         itemProps: {
-          a: { value: "1", nameProp: "ffff", editable: true },
-          b: { value: "1", nameProp: "ffff", editable: true },
-          c: { value: "1", nameProp: "ffff", editable: false },
+          a: {
+            value: "1911-н.в.",
+            nameProp: "годы выпуска автомобилей",
+            editable: true,
+          },
+          b: { value: "США", nameProp: "страна-производитель", editable: true },
         },
         children: [
           {
