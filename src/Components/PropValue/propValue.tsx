@@ -25,6 +25,7 @@ function PropVal({ value, keyOfItem, keyOfProperty, propNum }: PropValType) {
     );
     setEdit((edit) => !edit);
   };
+  const [form] = Form.useForm();
   const [isEdit, setEdit] = useState(false);
   return (
     <div>
@@ -51,6 +52,7 @@ function PropVal({ value, keyOfItem, keyOfProperty, propNum }: PropValType) {
           // style={{ maxWidth: 600 }}
           className={styles.Form}
           initialValues={{ remember: true }}
+          form={form}
           autoComplete="off"
           fields={inputField}
           onFieldsChange={(_, allFields) => {
