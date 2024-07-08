@@ -1,5 +1,11 @@
+export type SubProp = {
+  subPropName: string;
+  subPropText: string;
+  editable: boolean;
+};
+
 export type propsInfo = {
-  value: string;
+  value: SubProp[];
   nameProp: string;
   editable: boolean;
 };

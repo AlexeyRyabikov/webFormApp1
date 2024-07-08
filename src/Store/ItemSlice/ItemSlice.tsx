@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSelector, createSlice } from "@reduxjs/toolkit";
 import jSONTreeData from "./Example";
 import { StateType } from "./state.type";
 import { ItemPropsType } from "../../Types/ItemProps.type";
@@ -23,14 +23,22 @@ const itemSlice = createSlice({
     },
     changeTabText: (
       state,
-      action: { payload: { objKey: string; propKey: string; newVal: string } },
+      action: {
+        payload: {
+          objKey: string;
+          propKey: string;
+          newVal: string;
+          propNum: number;
+        };
+      },
     ) => {
-      const { objKey, propKey, newVal } = action.payload;
+      const { objKey, propKey, newVal, propNum } = action.payload;
       const fullData = state.currentParsedInfo;
       const neededObject = findELByID(fullData, objKey);
-      if (neededObject !== null) neededObject.itemProps[propKey].value = newVal;
+      if (neededObject !== null)
+        neededObject.itemProps[propKey].value[propNum].subPropText = newVal;
       if (state.currentObj !== null)
-        state.currentObj.itemProps[propKey].value = newVal;
+        state.currentObj.itemProps[propKey].value[propNum].subPropText = newVal;
       state.currentInfo = JSON.stringify(fullData);
     },
   },
