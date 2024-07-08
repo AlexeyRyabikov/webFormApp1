@@ -68,7 +68,7 @@ function PropVal({ value, keyOfItem, keyOfProperty, propNum }: PropValType) {
             </Button>
             {"    "}
             <Button
-              type="primary"
+              // type="primary"
               shape="circle"
               icon={<RollbackOutlined />}
               onClick={() => {
