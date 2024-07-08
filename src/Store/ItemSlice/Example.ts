@@ -36,7 +36,7 @@ const treeData: BranchItemsType[] = [
             subPropName: "цена самого дорогого автомобиля",
             subPropText:
               "самым дорогим автомобилем является Rolls-Royce La Rose Noire Droptail. Его цена составляет более 30 млн $",
-            editable: true,
+            editable: false,
           },
         ],
         nameProp: "цена самого дорогого автомобиля",
