@@ -11,7 +11,7 @@ const treeData: BranchItemsType[] = [
           {
             subPropName: "годы выпуска",
             subPropText: "1908-н.в.",
-            editable: true,
+            editable: false,
           },
         ],
         nameProp: "годы выпуска",
