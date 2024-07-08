@@ -24,6 +24,7 @@ export default function TreePart() {
   return (
     <div className={styles.Outer}>
       <Tree
+        className={styles.Tree}
         showLine
         switcherIcon={<DownOutlined />}
         defaultExpandedKeys={["0-0"]}

@@ -2,9 +2,15 @@
   padding: 10px;
   padding-top: 0px;
   flex-grow: 2;
+  min-width: 500px;
+  max-width: 900px;
 }
 .ReturnButton{
   margin-left:15px;
+}
+.Tab{
+  font-size: 20px;
+  line-height:1.5;
 }
 
 

@@ -17,7 +17,7 @@ const TabPart: React.FC = () => {
   const propCouples = Object.entries(currentProps);
   const ItemsToTabs = propCouples.map((value) => {
     return {
-      label: value[1].nameProp,
+      label: <span className={styles.Tab}>{value[1].nameProp}</span>,
       children: (
         <>
           {value[1].value.map((val, index) => (
