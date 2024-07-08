@@ -14,6 +14,7 @@ function PropVal({ value, keyOfItem, keyOfProperty, propNum }: PropValType) {
   const [inputField, setInputField] = useState<FieldData[]>([
     { name: [fieldName], value: value.subPropText },
   ]);
+  const [form] = Form.useForm();
   const onFinishForm: FormProps<FieldType>["onFinish"] = (newVal) => {
     dispatch(
       changeTabText({
@@ -46,6 +47,7 @@ function PropVal({ value, keyOfItem, keyOfProperty, propNum }: PropValType) {
       )}
       {isEdit && (
         <Form
+          form={form}
           name="basic"
           wrapperCol={{ span: 16 }}
           // style={{ maxWidth: 600 }}
