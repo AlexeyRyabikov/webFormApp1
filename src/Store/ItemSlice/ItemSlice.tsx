@@ -33,13 +33,11 @@ const itemSlice = createSlice({
       },
     ) => {
       const { objKey, propKey, newVal, propNum } = action.payload;
-      const fullData = state.currentParsedInfo;
-      const neededObject = findELByID(fullData, objKey);
+      const neededObject = findELByID(state.currentParsedInfo, objKey);
       if (neededObject !== null)
         neededObject.itemProps[propKey].value[propNum].subPropText = newVal;
-      if (state.currentObj !== null)
-        state.currentObj.itemProps[propKey].value[propNum].subPropText = newVal;
-      state.currentInfo = JSON.stringify(fullData);
+      state.currentObj = neededObject;
+      state.currentInfo = JSON.stringify(state.currentParsedInfo);
     },
   },
 });

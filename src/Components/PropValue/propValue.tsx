@@ -51,7 +51,6 @@ function PropVal({ value, keyOfItem, keyOfProperty, propNum }: PropValType) {
           wrapperCol={{ span: 16 }}
           // style={{ maxWidth: 600 }}
           className={styles.Form}
-          initialValues={{ remember: true }}
           form={form}
           autoComplete="off"
           fields={inputField}
