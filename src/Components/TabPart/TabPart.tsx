@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import styles from "./TabPart.module.scss";
 import { useSelector } from "react-redux";
-import { StateType } from "../../Store/ItemSlice/state.type";
+import { StateType } from "../../Store/ItemSlice/State.type";
 import { Tabs } from "antd";
 import { EditOutlined } from "@ant-design/icons";
-import PropVal from "../PropValue/propValue";
+import PropVal from "../PropValue/PropValue";
 import { compose } from "@reduxjs/toolkit";
 
 const TabPart: React.FC = () => {

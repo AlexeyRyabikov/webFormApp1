@@ -4,13 +4,13 @@ export type SubProp = {
   editable: boolean;
 };
 
-export type propsInfo = {
+export type PropsInfo = {
   value: SubProp[];
   nameProp: string;
   editable: boolean;
 };
 
 export type ItemPropsType = {
-  [key: string]: propsInfo;
+  [key: string]: PropsInfo;
   // [key: string]: string;
 };

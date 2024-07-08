@@ -1,4 +1,4 @@
-import { BranchItemsType } from "../Types/branchItems.type";
+import { BranchItemsType } from "../Types/BranchItems.type";
 export const findELByID = (
   unstratenedData: BranchItemsType[],
   id: string,

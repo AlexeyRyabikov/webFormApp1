@@ -1,5 +1,5 @@
 import { TreeProps } from "antd";
-import { BranchItemsType } from "../../Types/branchItems.type";
+import { BranchItemsType } from "../../Types/BranchItems.type";
 import { ItemType } from "../../Types/Item.type";
 type secondParam = Parameters<Exclude<TreeProps["onSelect"], undefined>>[1];
 type firstParam = Parameters<Exclude<TreeProps["onSelect"], undefined>>[0];

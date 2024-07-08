@@ -1,5 +1,5 @@
 import type { TreeDataNode } from "antd";
-import { BranchItemsType } from "../../Types/branchItems.type";
+import { BranchItemsType } from "../../Types/BranchItems.type";
 
 const treeData: BranchItemsType[] = [
   {
@@ -45,7 +45,7 @@ const treeData: BranchItemsType[] = [
     },
     children: [
       {
-        title: "chevrolete",
+        title: "chevrolet",
         key: "0-0-0",
         itemProps: {
           years: {
@@ -357,7 +357,7 @@ const treeData: BranchItemsType[] = [
         },
         children: [
           {
-            title: "thunderburd",
+            title: "thunderbird",
             itemProps: {
               a: {
                 // value: "1955 по 2005 годы",

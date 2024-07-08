@@ -1,8 +1,8 @@
 import { createSelector, createSlice } from "@reduxjs/toolkit";
 import jSONTreeData from "./Example";
-import { StateType } from "./state.type";
+import { StateType } from "./State.type";
 import { ItemPropsType } from "../../Types/ItemProps.type";
-import { BranchItemsType } from "../../Types/branchItems.type";
+import { BranchItemsType } from "../../Types/BranchItems.type";
 import { findELByID } from "../../Helpers/StraitenInfo";
 const initialState: StateType = {
   currentInfo: jSONTreeData,

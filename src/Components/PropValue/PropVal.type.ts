@@ -1,4 +1,4 @@
-import { propsInfo, SubProp } from "../../Types/ItemProps.type";
+import { PropsInfo, SubProp } from "../../Types/ItemProps.type";
 
 export type PropValType = {
   value: SubProp;

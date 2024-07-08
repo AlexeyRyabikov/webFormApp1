@@ -1,12 +1,12 @@
 import React, { JSX, SyntheticEvent, useState } from "react";
 import { EditOutlined, RollbackOutlined } from "@ant-design/icons";
-import { BranchItemsType } from "../../Types/branchItems.type";
+import { BranchItemsType } from "../../Types/BranchItems.type";
 import { FieldData, fieldName, FieldType, PropValType } from "./PropVal.type";
 import { Button, FloatButton, Form, FormProps, Input, Typography } from "antd";
 const { Title, Paragraph, Text, Link } = Typography;
 import { useDispatch } from "react-redux";
 import { changeTabText } from "../../Store/ItemSlice/ItemSlice";
-import styles from "./propValue.module.scss";
+import styles from "./PropValue.module.scss";
 import TextArea from "antd/es/input/TextArea";
 
 function PropVal({ value, keyOfItem, keyOfProperty, propNum }: PropValType) {
@@ -49,7 +49,6 @@ function PropVal({ value, keyOfItem, keyOfProperty, propNum }: PropValType) {
         <Form
           name="basic"
           wrapperCol={{ span: 16 }}
-          // style={{ maxWidth: 600 }}
           className={styles.Form}
           form={form}
           autoComplete="off"
@@ -60,7 +59,6 @@ function PropVal({ value, keyOfItem, keyOfProperty, propNum }: PropValType) {
           onFinish={onFinishForm}
         >
           <Form.Item name={fieldName}>
-            {/*<Input value={"ff"} />*/}
             <TextArea rows={4} />
           </Form.Item>
           <Form.Item wrapperCol={{ offset: 0, span: 16 }}>
