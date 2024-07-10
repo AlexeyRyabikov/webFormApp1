@@ -6,6 +6,7 @@ export type PropValType = {
   keyOfProperty: string;
   propNum: number;
 };
+
 export type FieldType = {
   newText: string;
 };
